@@ -24,18 +24,18 @@ export const ADD_USER = gql`
 `;
 
 export const SAVE_BOOK = gql`
-  mutation saveBook($input: savedBook!) {
-    saveBook(input: $input) {
+  mutation saveGame($input: savedGame!) {
+    saveGame(input: $input) {
       _id
       username
       email
-      bookCount
-      savedBooks {
+      gameCount
+      savedGames {
         # _id
         authors
         description
         title
-        bookId
+        gameId
         image
         link
       }
@@ -44,18 +44,18 @@ export const SAVE_BOOK = gql`
 `;
 
 export const REMOVE_BOOK = gql`
-  mutation removeBook($bookId: ID!) {
-    removeBook(bookId: $bookId) {
+  mutation removeGame($gameId: ID!) {
+    removeGame(gameId: $gameId) {
       _id
       username
       email
-      bookCount
-      savedBooks {
+      gameCount
+      savedGames {
         # _id
         authors
         description
         title
-        bookId
+        gameId
         image
         link
       }

@@ -28,21 +28,21 @@ export const loginUser = (userData) => {
   });
 };
 
-// save book data for a logged in user
-export const saveBook = (bookData, token) => {
+// save game data for a logged in user
+export const saveGame = (gameData, token) => {
   return fetch('/api/users', {
     method: 'PUT',
     headers: {
       'Content-Type': 'application/json',
       authorization: `Bearer ${token}`,
     },
-    body: JSON.stringify(bookData),
+    body: JSON.stringify(gameData),
   });
 };
 
-// remove saved book data for a logged in user
-export const deleteBook = (bookId, token) => {
-  return fetch(`/api/users/books/${bookId}`, {
+// remove saved game data for a logged in user
+export const deleteGame = (gameId, token) => {
+  return fetch(`/api/users/games/${gameId}`, {
     method: 'DELETE',
     headers: {
       authorization: `Bearer ${token}`,
@@ -50,8 +50,8 @@ export const deleteBook = (bookId, token) => {
   });
 };
 
-// make a search to google books api
-// https://www.googleapis.com/books/v1/volumes?q=harry+potter
-export const searchGoogleBooks = (query) => {
-  return fetch(`https://www.googleapis.com/books/v1/volumes?q=${query}`);
+// make a search to google games api
+// https://www.googleapis.com/games/v1/volumes?q=harry+potter
+export const searchGoogleGames = (query) => {
+  return fetch(`https://www.googleapis.com/games/v1/volumes?q=${query}`);
 };
