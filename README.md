@@ -16,7 +16,7 @@
 ### Description
 For the final project of our Bootcamp Course, we are building a MERN Stack application called Game Hunt! This application allows you to search for games from any platform, from any year, of any genre. It will show a cover image of the game, the name of the game, relese date, and an option to add the game to a list of favorites that you can access later by creating a secure login. 
 
-This was a collaborative project to use everything we have learned throughout the course to create a MERN stack single-page application with a focus on data and user demand. This application uses technologies including Performant Javascript, NoSQL databases, React single-page applications, GraphQL API's, Concurrent servers in a MERN app and Authentication. This project is also build as a mobile-first design, so that users can increasingly use their mobile devices to interact with the web app. This application is deployed to Heroku. [Click Here](https://project-3-game-hunt.herokuapp.com/)
+This was a collaborative project to use everything we have learned throughout the course to create a MERN stack single-page application with a focus on data and user demand. This application uses technologies including Performant Javascript, NoSQL databases, React single-page applications, GraphQL API's, Concurrent servers in a MERN app and Authentication. This project is also build as a mobile-first design, so that users can increasingly use their mobile devices to interact with the web app. This application is deployed to Heroku. [Click Here](https://game-hunt-n.herokuapp.com/)
 
 ----
 
